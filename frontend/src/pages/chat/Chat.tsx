@@ -794,6 +794,14 @@ const Chat = () => {
                 <img src={logo} className={styles.chatIcon} aria-hidden="true" />
                 <h1 className={styles.chatEmptyStateTitle}>{ui?.chat_title}</h1>
                 <h2 className={styles.chatEmptyStateSubtitle}>{ui?.chat_description}</h2>
+                <div style={{ marginTop: '1rem', textAlign: 'left' }}>
+                  <p><strong>Try asking:</strong></p>
+                  <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
+                    <li>"Show me today's production summary"</li>
+                    <li>"What are the outstanding RFIs?"</li>
+                    <li>"List recent safety observations"</li>
+                  </ul>
+                </div>
               </Stack>
             ) : (
               <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? '40px' : '0px' }} role="log">
